@@ -5,11 +5,11 @@ cp ./uclibc_config.linuxthread ./uClibc-0.9.33/.config
 make menuconfig
 
 Target Arch Features and Options -> Linux kernel header locate
-set to `pwd`/linux_header_goldfish/include
+set to `pwd`/linux_header_goldfish/include (MUST enter fullpath!)
 
 Library Installation Options
-uClibc runtime libarary directory: `pwd`/install
-uClibc development env dir: `pwd`/install/usr
+uClibc runtime libarary directory: `pwd`/install (MUST enter fullpath!)
+uClibc development env dir: `pwd`/install/usr (MUST enter fullpath!)
 
 make -j6
 make install
